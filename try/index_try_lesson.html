@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/top_style.css">
     <script src="script"></script>
-    <title>スベシャルサイト｜やってみよう！</title>
+    <title>スベシャルサイト｜第一課</title>
 </head>
 <body>
     <header>
@@ -29,43 +29,36 @@
     </header>
 
     <article>
+        <section class="try">
+            <div class="try_1">
+            <h2 class="title">やってみよう！</h2>
+            <h3>&lt;li&gt;: リスト項目要素</h3>
+            <p>&lt;li&gt; は HTML の要素で、リストの項目を表すために用いられます。この要素は、その項目が属する順序付きリスト (&lt;ol&gt;)、順序なしリスト (&lt;ul&gt;)、メニュー (&lt;menu&gt;) のいずれかの親要素内でセマンティックなリスト項目として機能します。リストの項目は通常、行並びで表示されます。順序付きリスト内では、数字や文字などの連番のリストマーカーを伴って表示されます。</p>
+            <p class="update">毎週水曜日更新！！</p>
+            <button class="more"><a href="try/index_try.html">もっと見る</a></button>
+            </div>
 
-        <section class="lesson_1">
-            <ul>
-                <li class="lesson_midashi">&lt;li&gt;: リスト項目要素</li>
-                <li class="lesson_ttl"><a href="../try/index_try_lesson.html">第一課</a></li>
-            </ul>
+            <div class="try_2">
+                <ul class="try_2_ttl">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+
+                <div class="code">code</div>
+                <div class="code_ex"></div>
+                <div class="web">web上</div>
+                <div class="web_ex"></div>
+            </div>
         </section>
-
-        <section class="lesson_2">
-            <ul>
-                <li class="lesson_midashi">&lt;li&gt;: リスト項目要素</li>
-                <li class="lesson_ttl">第一課</li>
-            </ul>
-        </section>
-
-        <section class="lesson_3">
-            <ul>
-                <li class="lesson_midashi">&lt;li&gt;: リスト項目要素</li>
-                <li class="lesson_ttl">第一課</li>
-            </ul>
-        </section>
-
-        <section class="lesson_4">
-            <ul>
-                <li class="lesson_midashi">&lt;li&gt;: リスト項目要素</li>
-                <li class="lesson_ttl">第一課</li>
-            </ul>
-        </section>
-
-        <div class="pagination">
-            <button id="prev" class="page-btn" onclick="changePage(-1)">&lt;</button>
-            <span id="pageNumber" class="page-number">1</span>
-            <span id="pageNumber" class="page-number">2</span>
-            <button id="next" class="page-btn" onclick="changePage(1)">&gt;</button>
-        </div>
     
     </article>
+
+    <div class="pagination">
+        <button id="prev" class="page-btn" onclick="changePage(-1)">&lt;</button>
+        <span id="pageNumber" class="page-number">第一課</span>
+        <button id="next" class="page-btn" onclick="changePage(1)">&gt;</button>
+    </div>
+
     
     <button class="backtop"><a href="../index_top.html"></a>top</button>
 </body>
