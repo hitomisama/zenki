@@ -209,7 +209,7 @@ a {
         max-width: 600px;
     }
 
-    .yellow-box{
+    .yellow-box {
         position: absolute;
         left: 15px;
         right: -5px;
@@ -219,31 +219,37 @@ a {
         transform: rotate(7.15deg);
     }
 
-    .blue-box{
+    .blue-box {
         position: relative;
         padding: 10px 20px;
         background-color: #9CBBDB;
     }
 
-    .white-box{
+    .white-box {
         background: rgba(255, 255, 255, 0.5) url('../img/背景.png') repeat;
         background-position: 0% 0%;
         background-size: 20%;
         background-blend-mode: overlay;
     }
 
-    .ul{
+    .ul {
         margin: 0;
         padding: 0;
         margin-block-end: 0;
         margin-inline-start: 0;
         text-align: left;
+
     }
 
-    .ul>li{
-               margin: 15px;
+    .ul ul {
+        list-style: url(../img/icon/箭头.png);
+    }
+
+    .ul>li {
+        margin: 15px;
         display: flex;
         justify-content: space-between;
+        margin: 30px 60px 40px 60px;
     }
 
     .number-step {
@@ -263,8 +269,36 @@ a {
         background-color: red;
     }
 
-    .ok {
+    .btn {
+        /* width: 197.5px; */
+        /* height: 65px; */
+        /* flex-shrink: 0; */
         background-color: transparent;
+        border-radius: 20px;
+        border: 6px solid #F9C99E;
+        background: #FFF;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+    }
+
+    .btn p {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        color: #000;
+        text-align: center;
+        font-family: "RocknRoll One";
+        font-size: 150%;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px auto;
+    }
+
+    .btn_right {
+        width: 25%;
     }
 
     .share {
@@ -274,7 +308,6 @@ a {
 
         .award {
             margin: top 10PX;
-            ;
             display: flex;
             background: rgba(255, 255, 255, 0.5)
                 /* 背景颜色，50%透明度 */
