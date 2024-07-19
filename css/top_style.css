@@ -339,8 +339,6 @@ a {
             position: absolute;
             top: 50%;
             right: 0%;
-
-
         }
 
     }
@@ -351,8 +349,16 @@ a {
     display: flex;
     padding-top: 250px;
     gap: 80px;
-   
 }
+
+.award_content img{
+    display: block;
+}
+
+.award_content img:nth-child(n+3) {
+    display: none; /* 隐藏第三张及以后的图片 */
+}
+
 
 
 .story_img {
