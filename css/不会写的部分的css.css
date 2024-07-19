@@ -1,0 +1,60 @@
+.share {
+    img {
+        width: 100%;
+    }
+
+    .award {
+        margin-top: 70px;
+        margin-bottom: 100px;
+        background: rgba(255, 255, 255, 0.5)
+            /* 背景颜色，50%透明度 */
+            url('../img/背景.png') repeat;
+        background-position: 0% 0%;
+        background-size: 20%;
+        background-blend-mode: overlay;
+        border-radius: 30px;
+        height: 750px;
+
+        .award_content {
+            display: flex;
+            padding-top: 250px;
+            gap: 80px;
+        }
+    }
+
+    .move_left,
+    .move_right {
+        width: 3%;
+    }
+
+    .move_left {
+        position: absolute;
+        top: 50%;
+    }
+
+    .move_right {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+
+
+    }
+
+}
+
+}
+
+.img_1 {
+position: relative;
+}
+
+.circle_top {
+position: absolute;
+top: 20%;
+left: 10%;
+width: 80px;
+height: 80px;
+background-color: #f8c97c;
+border-radius: 100%;
+/* z-index: -1; */
+}
