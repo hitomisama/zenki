@@ -313,6 +313,8 @@ a {
         .award {
             margin-top: 70px;
             margin-bottom: 100px;
+            margin-left: 30px;
+            margin-right: 30px;
             background: rgba(255, 255, 255, 0.5)
                 /* 背景颜色，50%透明度 */
                 url('../img/背景.png') repeat;
@@ -322,6 +324,7 @@ a {
             border-radius: 30px;
             height: 750px;
             position: relative;
+
 
         }
 
@@ -347,19 +350,87 @@ a {
 
 .award_content {
     display: flex;
-    padding-top: 250px;
-    gap: 80px;
+    padding-top: 10%;
+    padding-left: 5px;
+    /* justify-content: center;
+    align-items: center; */
+    /* gap: 30px; */
 }
 
-.award_content img{
+.award_content li {
+    margin: 30px;
+}
+
+.award_content img {
     display: block;
 }
 
 .award_content img:nth-child(n+3) {
-    display: none; /* 隐藏第三张及以后的图片 */
+    display: none;
+    /* 隐藏第三张及以后的图片 */
 }
 
+.midashi {
+    width: 300px;
+}
 
+.midashi_yellowbox {
+    background-color: #F8CA7C;
+    border-radius: 30px;
+    width: 725px;
+    height: 113px;
+    position: relative;
+}
+
+.midashi_moji {
+    background-color: #FFF;
+    border-radius: 30px;
+    width: 605px;
+    position: absolute;
+    top: -25px;
+    left: 40px;
+}
+
+.midashi_moji {
+    color: #000;
+    text-align: center;
+    /* h4 */
+    font-family: "RocknRoll One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.try {}
+
+.try_1 {
+    margin-top: 70px;
+    position: relative;
+}
+
+.try_content{
+
+}
+.content_circleyellow {
+    background-color: #F9C99E;
+    width: 1198.303px;
+    height: 927.089px;
+    transform: rotate(-18deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.content_cirlebule {
+    width: 1173.546px;
+    height: 948.989px;
+    transform: rotate(-22.172deg);
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #9CBBDB;
+    position: absolute;
+}
 
 .story_img {
     width: 100%;
