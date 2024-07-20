@@ -413,8 +413,17 @@ a {
     position: relative;
 }
 
-.try_content{
+.project-wrapper {
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+}
 
+.try_content{
+    position: relative;
+    padding: 200px 100px;
+    z-index: 2;
+    /* color: red; */
 }
 .content_circleyellow {
     background-color: #F9C99E;
@@ -454,15 +463,4 @@ a {
     }
 }
 
-.project-wrapper {
-    position: relative;
-    margin: auto;
-    max-width: 800px;
-}
 
-.try_content {
-    position: relative;
-    padding: 200px 100px;
-    z-index: 2;
-    color: red;
-}

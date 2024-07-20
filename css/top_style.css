@@ -371,21 +371,25 @@ a {
 }
 
 .midashi {
-    /* width: 300px; */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
+
 
 .midashi_yellowbox {
     background-color: #F8CA7C;
     border-radius: 30px;
-    width: 725px;
-    height: 113px;
+    /* width: 725px;
+    height: 113px; */
     position: relative;
 }
 
 .midashi_moji {
     background-color: #FFF;
     border-radius: 30px;
-    width: 605px;
+    width: 305px;
     position: absolute;
     top: -25px;
     left: 40px;
@@ -396,7 +400,7 @@ a {
     text-align: center;
     /* h4 */
     font-family: "RocknRoll One";
-    font-size: 48px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -409,27 +413,47 @@ a {
     position: relative;
 }
 
-.try_content{
-
+.try_warpper{
+    position: relative;
+    margin: auto;
+    max-width: 800px;
 }
+.try_content{
+    position: relative;
+    padding: 200px 100px;
+    z-index: 2;
+}
+
 .content_circleyellow {
     background-color: #F9C99E;
-    width: 1198.303px;
-    height: 927.089px;
+    /* width: 1198.303px;
+    height: 927.089px; */
     transform: rotate(-18deg);
     flex-shrink: 0;
     border-radius: 50%;
     position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
 }
 
 .content_cirlebule {
-    width: 1173.546px;
-    height: 948.989px;
+    /* width: 1173.546px;
+    height: 948.989px; */
     transform: rotate(-22.172deg);
     flex-shrink: 0;
     border-radius: 50%;
     background: #9CBBDB;
     position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
 }
 
 .story_img {
