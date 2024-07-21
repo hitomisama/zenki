@@ -9,15 +9,15 @@ document.getElementById('score-confirm-btn').addEventListener('click', function 
     if (total >= 51) {
         document.getElementById('score').innerHTML = 'A';
     }
-    
+
     if (total >= 36 && total < 51) {
         document.getElementById('score').innerHTML = 'B';
     }
-    
+
     if (total >= 0 && total < 36) {
         document.getElementById('score').innerHTML = '人生は点数で測るべきではない。';
     }
-    
+
 
     // document.getElementById('score').innerText=total
     console.log('total', total)
@@ -74,17 +74,18 @@ for (let i = 0; i < numberStepControlup.length; i++) {
 let scrollValue = 0;
 document.getElementById('move-left').addEventListener('click', function () {
     scrollValue = scrollValue + 100;
-    console.log('Scroll Value after increment:', scrollValue); // 调试信息
     if (scrollValue === 400) {
         scrollValue = 0;
     }
-    console.log('Scroll Value after reset check:', scrollValue); // 调试信息
     document.getElementById('scroll-view').style.transform = 'translateX(-' + scrollValue + '%)';
 });
-console.log(document.getElementById('move-left'));
-console.log(document.getElementById('scroll-view'));
 
 document.getElementById('code').value = '<p>这是一段文本<p>'
 document.getElementById('code').addEventListener('input', function (e) {
     document.getElementById('priview').innerHTML = e.target.value
 })
+
+const htmlBtn = document.getElementById('htmlBtn');
+const cssBtn = document.getElementById('cssBtn');
+const htmlContent = document.getElementById('htmlContent');
+const cssContent = document.getElementById('cssContent');
