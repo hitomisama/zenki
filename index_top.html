@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/top_style.css">
-    <script src="js/script.js" defer></script>
+    <!-- <script defer src="js/script.js"></script> -->
+    <script defer src="js/script.js"></script>
     <title>スベシャルサイト｜TOP</title>
 </head>
 
@@ -93,7 +94,8 @@
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span><img src="img/moji/絵を描いたり、イラストを描くのが好きで、自分でゼロから何か生み出したいです.png" alt=""></span>
+                                    <span><img src="img/moji/絵を描いたり、イラストを描くのが好きで、自分でゼロから何か生み出したいです.png"
+                                            alt=""></span>
                                     <div class="number-step">
                                         <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
@@ -147,6 +149,8 @@
                     </div>
 
                 </div>
+
+
 
                 <section class="try">
                     <div class="try_1">
@@ -244,9 +248,18 @@
 
     <div id="overlay" class="overlay-container">
         <div class="overlay-content">
-            <img id="result-background" src="img/moji/弹窗.png" alt="">
-            <div id="overlay-close-btn"><img src="img/icon/close.png" alt=""></div>
-            <div class="result"></div>
+            <div class="windows">
+                <img id="result-background" src="img/moji/弹窗.png" alt="">
+                <img id="overlay-close-btn" src="img/icon/close.png" alt="">
+                <div class="result">
+                    <div class="score-back">
+                        <h3>あなたの適応性は：</h3>
+                        <p id="score"></p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 

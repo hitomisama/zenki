@@ -196,9 +196,11 @@ a {
         line-height: normal;
         margin: 20px 20px 20px 20px;
     }
-.content img{
-    margin-top: 20px;
-}
+
+    .content img {
+        margin-top: 20px;
+    }
+
     .question,
     .blue-box,
     .yellow-box,
@@ -208,7 +210,7 @@ a {
 
     .question {
         position: relative;
-        margin:10% auto;
+        margin: 10% auto;
         max-width: 600px;
         margin-top: 80px;
         margin-bottom: 100px;
@@ -274,8 +276,8 @@ a {
         gap: 20px;
     }
 
-    .ul span img{
-        width:100% ;
+    .ul span img {
+        width: 100%;
     }
 
 
@@ -283,6 +285,7 @@ a {
         display: flex;
         align-items: center;
         gap: 10px;
+
         span {
             font-size: 24px;
         }
@@ -296,7 +299,7 @@ a {
         background-color: #F8CA7C;
         border: 1px solid #F8CA7C;
         width: 20px;
-        
+
     }
 
 
@@ -392,30 +395,31 @@ a {
     display: block;
 }
 
-/* .award_content img:nth-child(n+3) {
-    display: none;
-} */
+/*=====やってみよう======*/
 
 .midashi {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 2;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .midashi_yellowbox {
     background-color: #F8CA7C;
     border-radius: 30px;
-    /* width: 725px;
-    height: 113px; */
+    width: 350px;
+    height: 50px;
     position: relative;
 }
 
 .midashi_moji {
     background-color: #FFF;
     border-radius: 30px;
-    width: 305px;
+    width: 300px;
     position: absolute;
     top: -25px;
     left: 40px;
@@ -443,34 +447,42 @@ a {
     position: relative;
     margin: auto;
     max-width: 800px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
 }
 
 .try_content {
     position: relative;
-    padding: 200px 100px;
+    padding: 240px 100px;
     z-index: 2;
+    color: #FFF;
+    text-align: left;
+    /* text-wrap: 10px; */
+    line-height: 2.2;
+    letter-spacing: 0.9px;
 }
 
 .content_circleyellow {
     background-color: #F9C99E;
-    /* width: 1198.303px;
-    height: 927.089px; */
-    transform: rotate(-18deg);
+    width: 900px;
+    height: 700px;
+        transform: rotate(-30deg);
     flex-shrink: 0;
     border-radius: 50%;
     position: absolute;
 
     top: 0;
-    left: 0;
+    left: 30px;
     right: 0;
     bottom: 0;
 
 }
 
 .content_cirlebule {
-    /* width: 1173.546px;
-    height: 948.989px; */
-    transform: rotate(-22.172deg);
+    width: 900px;
+    height: 700px;
+    transform: rotate(-30deg);
     flex-shrink: 0;
     border-radius: 50%;
     background: #9CBBDB;
@@ -483,6 +495,24 @@ a {
 
 }
 
+.update {
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-family: "Tsukushi B Round Gothic";
+    font-size: 20px;
+    z-index: 4;
+    border-radius: 30px;
+    background-color: #F8CA7C;
+
+    top: 390px;
+    left: 400px;
+
+}
+
+/*=====やってみよう======*/
+
+
 .story_img {
     width: 100%;
 
@@ -491,6 +521,7 @@ a {
     }
 }
 
+/*=======弹窗======*/
 .overlay-container {
     position: fixed;
     top: 0;
@@ -501,32 +532,75 @@ a {
     display: none;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-
-/* background:url(../img/moji/弹窗.png)no-repeat; */
+    z-index: 3;
 
 }
 
-.overlay-container img{
-    width: 100%;
-}
 .overlay-content {
-    padding: 20px;
+    padding: 10px;
     width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
-#overlay-close-btn{
+
+.windows {
+    position: relative;
+}
+
+#result-background {
+    display: block;
+    width: 700px;
+}
+
+#overlay-close-btn {
+    width: 60px;
     position: absolute;
-    top: 450px;
-    left: 750px;
-    right: 0;
-    bottom: 0;
-    width: 5%;
+    cursor: pointer;
+    top: 150px;
+    left: 460px;
+}
+
+.score-back {
+    /* background: rgba(255, 255, 255, 0.5) url('../img/背景.png') repeat;
+    background-position: 0% 0%;
+    background-size: 50%;
+    background-blend-mode: overlay;
+    border-radius: 30px; */
+    display: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 350px;
+    width: 350px;
+    line-height: 100px; */
+    left: 10px;
 
 }
-/* .overlay-container2 img{
-    display: none;
-} */
 
+.result {
+    position: absolute;
+    top: 280px;
+    left: 170px;
+}
+
+.result h3 {
+    font-size: 200%;
+    color: #FFF;
+}
+
+#score {
+    font-size: 300%;
+    margin: 10px 10px;
+    font-family: "Mplus 1p";
+    color: #FFF;
+}
+
+/*=======弹窗======*/
+
+
+/* =====奖状部分====== */
 .award {
     /* display: flex; */
     white-space: nowrap;
@@ -551,6 +625,7 @@ a {
     transition: all 0.3s linear;
 }
 
+
 .overlay-container2 {
     position: fixed;
     top: 0;
@@ -571,4 +646,29 @@ a {
     font-size: 18px;
     vertical-align: middle;
     list-style-type: circle !important;
+}
+
+.indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    column-gap: 18px;
+    /* z-index: 10; */
+    justify-content: center;
+    align-items: center;
+}
+
+.indicator li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    list-style: none;
+    background-color: #fff;
+    border: 2px #000 solid;
+    cursor: pointer;
+}
+
+.indicator li:first-of-type {
+    background-color: #000;
 }

@@ -5,9 +5,26 @@ document.getElementById('score-confirm-btn').addEventListener('click', function 
     for (let i = 0; i < numberStepControls.length; i++) {
         total = total + parseInt(numberStepControls[i].value)
     }
+    let test = ""
+    if (total >= 51) {
+        document.getElementById('score').innerHTML = 'A';
+    }
+    
+    if (total >= 36 && total < 51) {
+        document.getElementById('score').innerHTML = 'B';
+    }
+    
+    if (total >= 0 && total < 36) {
+        document.getElementById('score').innerHTML = '人生は点数で測るべきではない。';
+    }
+    
+
+    // document.getElementById('score').innerText=total
     console.log('total', total)
     document.getElementById('overlay').style.display = 'flex'
 })
+
+
 
 document.getElementById('overlay-close-btn').addEventListener('click', function () {
     document.getElementById('overlay').style.display = 'none'
@@ -43,16 +60,6 @@ for (let i = 0; i < numberStepControlDown.length; i++) {
     })
 }
 
-// let numberStepControlup = document.getElementsByClassName('number-step-up')
-// for (let i = 0; i < numberStepControlup.length; i++) {
-//     numberStepControlup[i].addEventListener('click', function (e) {
-//         let number = e.target.parentElement.children[1].value
-//         number = number + 1
-//         e.target.parentElement.children[1].value = numberProcess(number)
-//         console.log(number)
-
-//     })
-// }
 let numberStepControlup = document.getElementsByClassName('number-step-up');
 for (let i = 0; i < numberStepControlup.length; i++) {
     numberStepControlup[i].addEventListener('click', function (e) {
@@ -64,15 +71,18 @@ for (let i = 0; i < numberStepControlup.length; i++) {
 }
 
 
-let scrollValue = 0
+let scrollValue = 0;
 document.getElementById('move-left').addEventListener('click', function () {
-    scrollValue = scrollValue + 100
+    scrollValue = scrollValue + 100;
+    console.log('Scroll Value after increment:', scrollValue); // 调试信息
     if (scrollValue === 400) {
-        scrollValue = 0
+        scrollValue = 0;
     }
-    document.getElementById('scroll-view').style.transform = 'translateX(-' + scrollValue + '%)'
-})
-
+    console.log('Scroll Value after reset check:', scrollValue); // 调试信息
+    document.getElementById('scroll-view').style.transform = 'translateX(-' + scrollValue + '%)';
+});
+console.log(document.getElementById('move-left'));
+console.log(document.getElementById('scroll-view'));
 
 document.getElementById('code').value = '<p>这是一段文本<p>'
 document.getElementById('code').addEventListener('input', function (e) {
