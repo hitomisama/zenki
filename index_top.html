@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/top_style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <title>スベシャルサイト｜TOP</title>
 </head>
 
@@ -53,64 +53,64 @@
                     <div class="yellow-box"></div>
                     <div class="blue-box">
                         <div class="white-box">
-                            <h3 class="content">０〜１まで選んでください</h3>
+                            <h3 class="content"><img src="img/moji/０〜１まで選んでください.png" alt=""></h3>
                             <ul class="ul">
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>自分の作品に強い自信とこだわりを持っていますを持っています</span>
+                                    <span><img src="img/moji/自分の作品に強い自信とこだわりを持っていますを持っています.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>地道な作業が苦にならない、あるいは好きです</span>
+                                    <span><img src="img/moji/流行に敏感で新しいもの好き、好奇心旺盛です.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>流行に敏感で新しいもの好き、好奇心旺盛です</span>
+                                    <span><img src="img/moji/地道な作業が苦にならない、あるいは好きです.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>作業において効率を意識できます</span>
+                                    <span><img src="img/moji/作業において効率を意識できます.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>絵を描いたり、イラストを描くのが好きで、自分でゼロから何か生み出したいです</span>
+                                    <span><img src="img/moji/絵を描いたり、イラストを描くのが好きで、自分でゼロから何か生み出したいです.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                                 <li>
                                     <img src="img/icon/箭头.png" alt="" class="jiantou">
-                                    <span>文字の大きさが1pt違ったり写真の位置が数ミリ変わるところが気になります</span>
+                                    <span><img src="img/moji/文字の大きさが1pt違ったり写真の位置が数ミリ変わるところが気になります.png" alt=""></span>
                                     <div class="number-step">
-                                        <span>&lt;</span>
+                                        <span class="number-step-down">&lt;</span>
                                         <input class="number-step-control" value="1" />
-                                        <span>&gt;</span>
+                                        <span class="number-step-up">&gt;</span>
                                     </div>
                                 </li>
                             </ul>
-                            <button class="btn">
+                            <button id="score-confirm-btn" class="btn">
                                 <p>提出<img src="img/icon/right.png" alt="" class="btn_right">
                             </button>
                             </p>
@@ -125,18 +125,27 @@
                     <div class="title-text">実績シェア</div>
                 </h2>
                 <div class="award">
-                    <div class="move_left"><img src="img/icon/left.png" alt=""></div>
-                    <div class="move_right"><img src="img/icon/right.png" alt=""></div>
-                    <ul class="award_content">
-                        <li><img src="img/奖/050.png" alt=""></li>
-                        <li><img src="img/奖/051.png" alt=""></li>
-                        <li><img src="img/奖/052.png" alt="" style="display: none;"></li>
-                        <li><img src="img/奖/053.png" alt="" style="display: none;"></li>
-                        <li><img src="img/奖/054.png" alt="" style="display: none;"></li>
-                        <li><img src="img/奖/057.png" alt="" style="display: none;"></li>
-                        <li><img src="img/奖/057.png" alt="" style="display: none;"></li>
-                        <li><img src="img/奖/061.png" alt="" style="display: none;"></li>
-                    </ul>
+                    <div id="move-left" class="move_left"><img src="img/icon/left.png" alt=""></div>
+                    <div id="move-right" class="move_right"><img src="img/icon/right.png" alt=""></div>
+                    <div id="scroll-view" style="transform: translateX(0);">
+                        <ul class="award_content">
+                            <li><img src="img/奖/050.png" alt=""></li>
+                            <li><img src="img/奖/051.png" alt=""></li>
+                        </ul>
+                        <ul class="award_content">
+                            <li><img src="img/奖/052.png" alt=""></li>
+                            <li><img src="img/奖/053.png" alt=""></li>
+                        </ul>
+                        <ul class="award_content">
+                            <li><img src="img/奖/054.png" alt=""></li>
+                            <li><img src="img/奖/057.png" alt=""></li>
+                        </ul>
+                        <ul class="award_content">
+                            <li><img src="img/奖/057.png" alt=""></li>
+                            <li><img src="img/奖/061.png" alt=""></li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <section class="try">
@@ -179,6 +188,11 @@
                         <div class="web">web上</div>
                         <div class="web_ex"></div>
                     </div>
+                </section>
+
+                <section>
+                    <textarea id="code" class="code-runner"></textarea>
+                    <div id="priview" class="code-runner"></div>
                 </section>
 
                 <section class="blog">
@@ -226,6 +240,19 @@
             <li>E-Mail：jp@jec.ac.jp</li>
         </ul>
     </footer>Japan Electronics College. All Rights Reserved.Unilever, All Rights Reserved.</small>
+
+
+    <div id="overlay" class="overlay-container">
+        <div class="overlay-content">
+            <img id="result-background" src="img/moji/弹窗.png" alt="">
+            <div id="overlay-close-btn"><img src="img/icon/close.png" alt=""></div>
+            <div class="result"></div>
+        </div>
+    </div>
+
+    <div class="overlay-container2">
+    </div>
+
 </body>
 
 </html>
