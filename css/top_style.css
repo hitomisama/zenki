@@ -313,7 +313,6 @@ a {
         background: #FFF;
         margin-bottom: 20px;
         margin-top: 20px;
-
     }
 
     .btn p {
@@ -336,9 +335,9 @@ a {
     }
 
     .share {
-        img {
+        /* img {
             width: 100%;
-        }
+        } */
 
         .award {
             margin-top: 70px;
@@ -414,6 +413,8 @@ a {
     width: 350px;
     height: 50px;
     position: relative;
+    left: 100px;
+    top: 30px;
 }
 
 .midashi_moji {
@@ -428,7 +429,8 @@ a {
 .midashi_moji {
     color: #000;
     text-align: center;
-    /* h4 */
+    margin-top: 32px;
+    margin-left: -15px;
     font-family: "RocknRoll One";
     font-size: 24px;
     font-style: normal;
@@ -454,10 +456,11 @@ a {
 
 .try_content {
     position: relative;
-    padding: 240px 100px;
+    padding: 200px 50px 200px 140px;
     z-index: 2;
     color: #FFF;
     text-align: left;
+    font-size: 120%;
     /* text-wrap: 10px; */
     line-height: 2.2;
     letter-spacing: 0.9px;
@@ -465,15 +468,15 @@ a {
 
 .content_circleyellow {
     background-color: #F9C99E;
-    width: 900px;
-    height: 700px;
-        transform: rotate(-30deg);
+    width: 800px;
+    height: 600px;
+    transform: rotate(-30deg);
     flex-shrink: 0;
     border-radius: 50%;
     position: absolute;
 
-    top: 0;
-    left: 30px;
+    top: 90px;
+    left: 140px;
     right: 0;
     bottom: 0;
 
@@ -500,15 +503,54 @@ a {
     color: #FFF;
     text-align: center;
     font-family: "Tsukushi B Round Gothic";
-    font-size: 20px;
+    font-size: 25px;
     z-index: 4;
-    border-radius: 30px;
+    border-radius: 10px;
     background-color: #F8CA7C;
+    width: 30%;
 
-    top: 390px;
-    left: 400px;
+    top: 480px;
+    left: 480px;
 
 }
+
+.btn_more {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 6px solid #F9C99E;
+    background: #FFF;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    z-index: 4;
+    position: absolute;
+    width: 150px;
+
+    bottom: 20px;
+    right: 130px;
+
+}
+
+.btn_more p {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    color: #000;
+    text-align: center;
+    font-family: "RocknRoll One";
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 2px auto;
+}
+
+.btn_more img {
+    width:20%;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
 
 /*=====やってみよう======*/
 
@@ -540,14 +582,17 @@ a {
     padding: 10px;
     width: 50%;
     height: auto;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 
 }
 
 .windows {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 #result-background {
@@ -581,7 +626,7 @@ a {
 
 .result {
     position: absolute;
-    top: 280px;
+    top: 300px;
     left: 170px;
 }
 
@@ -591,7 +636,7 @@ a {
 }
 
 #score {
-    font-size: 300%;
+    font-size: 200%;
     margin: 10px 10px;
     font-family: "Mplus 1p";
     color: #FFF;
