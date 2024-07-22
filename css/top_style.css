@@ -371,13 +371,14 @@ a {
 
         .move_left {
             position: absolute;
-            top: 50%;
+            top: 40%;
+            left: 0.5%;
         }
 
         .move_right {
             position: absolute;
-            top: 50%;
-            right: 0%;
+            top: 40%;
+            left: 94%;
         }
 
     }
@@ -399,7 +400,7 @@ a {
 }
 .award_content {
     display: flex;
-    padding-top: 10%;
+    /* padding-top: 10%; */
     padding-left: 5px;
     /* justify-content: center;
     align-items: center; */
@@ -837,7 +838,7 @@ a {
 }
 
 
-
+/*====测试=====*/
 .indicator {
     width: 100%;
     position: absolute;
@@ -862,3 +863,4 @@ a {
 .indicator li:first-of-type {
     background-color: #000;
 }
+/*====测试=====*/

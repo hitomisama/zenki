@@ -1,3 +1,4 @@
+// 提交数据，并做出评价
 let numberStepControls = document.getElementsByClassName('number-step-control')
 
 document.getElementById('score-confirm-btn').addEventListener('click', function () {
@@ -18,18 +19,20 @@ document.getElementById('score-confirm-btn').addEventListener('click', function 
         document.getElementById('score').innerHTML = '人生は点数で測るべきではない。';
     }
 
-
     // document.getElementById('score').innerText=total
     console.log('total', total)
     document.getElementById('overlay').style.display = 'flex'
 })
+// 提交数据，并做出评价
 
 
-
+// 控制弹窗开关
 document.getElementById('overlay-close-btn').addEventListener('click', function () {
     document.getElementById('overlay').style.display = 'none'
 })
+// 控制弹窗开关
 
+// 控制input框里的的值为数字，并限制最大最小值，点击左右按钮让框里的数字+1-1
 function numberProcess(value) {
     if (/\D+/.test(value)) {
         return 0
@@ -43,7 +46,6 @@ function numberProcess(value) {
         return value
     }
 }
-
 
 for (let i = 0; i < numberStepControls.length; i++) {
     numberStepControls[i].addEventListener('input', function (e) {
@@ -69,21 +71,53 @@ for (let i = 0; i < numberStepControlup.length; i++) {
         console.log(number);
     });
 }
+// 控制input框里的的值为数字，并限制最大最小值，点击左右按钮让框里的数字+1-1
 
+// 点击进行翻页
 
 let scrollValue = 0;
+let scrollView = document.getElementById('scroll-view');
+
 document.getElementById('move-left').addEventListener('click', function () {
-    scrollValue = scrollValue + 100;
-    if (scrollValue === 400) {
-        scrollValue = 0;
+    scrollValue = (scrollValue + 100) % 500; // 使用取模运算符确保scrollValue在0到300之间
+    scrollView.style.transform = 'translateX(-' + scrollValue + '%)';
+    if (scrollValue === 0) {
+        scrollView.style.transition = 'none'; // 关闭动画
+    } else {
+        scrollView.style.transition = 'transform 0.3s ease'; // 恢复动画
     }
-    document.getElementById('scroll-view').style.transform = 'translateX(-' + scrollValue + '%)';
 });
 
-document.getElementById('code').value = '<p>这是一段文本<p>'
+document.getElementById('move-right').addEventListener('click', function () {
+    scrollValue = (scrollValue - 100 + 500) % 500; // 使用取模运算符确保scrollValue在0到300之间
+    scrollView.style.transform = 'translateX(-' + scrollValue + '%)';
+    if (scrollValue === 400) {
+        scrollView.style.transition = 'none'; // 关闭动画
+    } else {
+        scrollView.style.transition = 'transform 0.3s ease'; // 恢复动画
+    }    console.log(scrollValue)
+})
+
+
+// 点击进行翻页
+
+document.getElementById('code').value = `
+<p>私が好きな食べ物</p>
+<ul>
+  <li>スイカ</li>
+  <li>りんご</li>
+  <li>みかん</li>
+</ul>
+`;
 document.getElementById('code').addEventListener('input', function (e) {
     document.getElementById('priview').innerHTML = e.target.value
+    console.log(target.value)
 })
+window.addEventListener('load', function () {
+    document.getElementById('priview').innerHTML = document.getElementById('code').value;
+});// 页面加载时初始化预览区域的内容
+
+
 
 const htmlBtn = document.getElementById('htmlBtn');
 const cssBtn = document.getElementById('cssBtn');
