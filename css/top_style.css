@@ -410,6 +410,7 @@ a {
     align-items: center;
 }
 
+/* =====奖状部分====== */
 .award_content {
     display: flex;
     /* padding-top: 10%; */
@@ -426,6 +427,32 @@ a {
 .award_content img {
     display: block;
 }
+
+.award {
+    /* display: flex; */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.move_left {
+    left: 0;
+}
+
+.award_content {
+    display: inline-block;
+    width: 100%;
+}
+
+.award_content li {
+    display: inline-block;
+}
+
+#scroll-view {
+    /* 过渡动画 */
+    transition: all 0.3s linear;
+}
+
+/* =====奖状部分====== */
 
 /*=====やってみよう======*/
 
@@ -722,6 +749,7 @@ a {
 /*=======blog==========*/
 .blog {
     position: relative;
+    padding-bottom: 600px;
 }
 
 .title_update {
@@ -822,10 +850,100 @@ a {
 
 }
 
+.story_more {
+    border-radius: 20px;
+    border: 6px solid #F9C99E;
+    background: #FFF;
+    /* margin-bottom: 20px;
+    margin-top: 20px; */
+    z-index: 4;
+    width: 180px;
+    padding-right: 10px;
+    margin-top: 20px;
+    margin-left: 1100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.more_img {
+    width: 60%;
+}
 
+.right_img {
+    width: 15%;
+}
+
+.story_more img {
+    margin-top: 3px;
+}
 
 /*=======blog==========*/
+
+/*=======topに戻る=====*/
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top img {
+    width: 60%;
+}
+
+/*=======topに戻る=====*/
+
+/*=======footer=======*/
+footer {
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    z-index: 2;
+    bottom: 49px;
+    left: 410px;
+}
+
+.footer ul {
+    list-style: none;
+    color: #FFF;
+    display: column;
+    text-align: center;
+    font-family: "Mplus 1p";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+
+
+}
+
+.Contact {}
+
+.footer-back {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    overflow:auto;
+    bottom: -420px;
+    right: -70px;
+}
+
+small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    color: #FFF;
+}
+
+/*=======footer=======*/
+
 
 /*=======弹窗======*/
 .overlay-container {
@@ -849,7 +967,6 @@ a {
     /* display: flex;
     align-items: center;
     justify-content: center; */
-
 }
 
 .windows {
@@ -920,33 +1037,9 @@ a {
 
 /*=======弹窗======*/
 
+/*=======弹窗======*/
 
-/* =====奖状部分====== */
-.award {
-    /* display: flex; */
-    white-space: nowrap;
-    overflow: hidden;
-}
 
-.move_left {
-    left: 0;
-}
-
-.award_content {
-    display: inline-block;
-    width: 100%;
-}
-
-.award_content li {
-    display: inline-block;
-}
-
-#scroll-view {
-    /* 过渡动画 */
-    transition: all 0.3s linear;
-}
-
-/* =====奖状部分====== */
 
 
 /*====测试=====*/
