@@ -23,13 +23,16 @@ a {
     margin: auto;
 }
 
-.try_background{
+.try_background {
     background: rgba(255, 255, 255, 0.5)
-    /* 背景颜色，50%透明度 */
-    url('../img/背景.png') repeat;
-background-position: 0% 0%;
-background-size: 15%;
-background-blend-mode: overlay;
+        /* 背景颜色，50%透明度 */
+        url('../img/背景.png') repeat;
+    background-position: 0% 0%;
+    background-size: 15%;
+    background-blend-mode: overlay;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
 
 }
 
@@ -99,20 +102,94 @@ background-blend-mode: overlay;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 80px;
+    padding-bottom: 20px;
 }
 
-.try,.blog{
-    background-color:white;
+.try,
+.blog {
+    background-color: white;
     border-radius: 40px;
     padding: 5px 15px 5px 15px;
     border: 2px solid #7E93C8;
     box-shadow: 11px 10px 4px 0px rgba(248, 202, 124, 0.80);
 }
 
-article ul{
+article ul {
     list-style: none;
 }
 
-.lesson_midashi{
-background-color: #E8F2F8;
+.lesson {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: auto 40px;
+    padding-bottom: 40px;
+    width: 90%;
+}
+
+.lesson_1,.lesson_2,.lesson_3,.lesson_4{
+    width: 398px;
+
+}
+.lesson_midashi {
+    background-color: #E8F2F8;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 398px;
+    height: 308px;
+    flex-shrink: 0;
+    border-radius: 20px;
+
+}
+
+.lesson_midashi img {
+    margin: 85px;
+}
+
+.lesson_ttl {
+    color: #000;
+    text-align: center;
+    font-family: "Tsukushi B Round Gothic";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    width: 398px;
+}
+
+/* .lesson_1 {
+    padding-top: 100px;
+} */
+
+.pagination{
+left: -45%;
+}
+
+#prev,
+#next {
+    width: 30.811px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 30.811px;
+    border: 2px solid  #9CBBDB;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #F8CA7C;
+    background-color: white;
+}
+
+.page-number {
+    color: #000;
+    text-align: center;
+    font-family: "Yusei Magic";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 144.655%;
+    /* 28.931px */
+    letter-spacing: 0.8px;
 }
